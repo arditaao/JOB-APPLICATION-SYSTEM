@@ -1,17 +1,17 @@
-import java.util.ArrayList;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import java.util.List;
 
 public class ApplicationForm {
-    private String firstName;
+    public class ApplicationForm {
     private String lastName;
     private String email;
-    private String phoneNumber;
-    private String position;
-    private String coverLetter;
-    private List<String> attachments;
+     @ModelAttribute("position")
+    public String getPosition() {
+    return position;
+    }
 
-    public ApplicationForm() {
-        attachments = new ArrayList<>();
+   public void setPosition(String position) {
+       this.position = position;
     }
 
     // Getters and setters for the class attributes
