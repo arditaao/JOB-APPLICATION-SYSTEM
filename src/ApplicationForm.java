@@ -16,4 +16,7 @@ public class ApplicationForm {
 
     // Getters and setters for the class attributes
     // ...
+    <form action="#" th:action="@{/submitApplication}" th:object="${applicationForm}" method="post">
+    <!-- The rest of the form remains the same -->
+</form>
 }
