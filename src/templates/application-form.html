@@ -7,7 +7,8 @@
 </head>
 <body>
     <h1>Job Application Form</h1>
-    <form>
+    <form action="#" th:action="@{/submitApplication}" th:object="${applicationForm}" method="post">
+        
         <label for="firstName">First Name:</label>
         <input type="text" id="firstName" name="firstName" required>
         <br>
@@ -33,6 +34,4 @@
     </form>
 </body>
 </html>
-<form action="#" th:action="@{/submitApplication}" th:object="${applicationForm}" method="post">
-    <!-- The rest of the form remains the same -->
-</form>
+
