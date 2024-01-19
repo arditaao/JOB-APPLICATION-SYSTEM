@@ -1,11 +1,14 @@
 import org.springframework.web.bind.annotation.ModelAttribute;
+import java.util.ArrayList;
 import java.util.List;
 
+
 public class ApplicationForm {
-    public class ApplicationForm {
     private String lastName;
     private String email;
-     @ModelAttribute("position")
+
+    @ModelAttribute("position")
+
     public String getPosition() {
     return position;
     }
